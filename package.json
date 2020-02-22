@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js --exec babel-node --presets babel-preset-env",
-    "serve": "index.js --exec babel-node --presets babel-preset-env"
+    "serve": "babel-node index.js --presets babel-preset-env "
   },
   "author": "",
   "license": "ISC",
