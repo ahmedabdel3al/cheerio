@@ -53,7 +53,7 @@ const content = ($) => {
 }
 
 
-app.get('/', (req, res) => {
+app.get('/scrap', (req, res) => {
   const url = req.query.url;
   rp(encodeURI(url))
     .then(function (html) {
@@ -72,10 +72,10 @@ app.get('/', (req, res) => {
     });
 })
 
-app.get('/test', (req, res) => {
+app.get('/', (req, res) => {
   res.send({
     bolyfci: 'welcome to our wibsite'
   })
 })
 const port = 3000
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(process.env.PORT || port, () => console.log(`Example app listening on port ${port}!`))
