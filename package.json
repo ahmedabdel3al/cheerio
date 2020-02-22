@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js --exec babel-node --presets babel-preset-env",
-    "serve": "babel-node index.js --presets babel-preset-env "
+    "serve": "./node_modules/.bin/babel-node index.js --presets babel-preset-env "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel": "^6.23.0",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "request": "^2.88.2",
